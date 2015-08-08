@@ -1,0 +1,6 @@
+E:\Software Development (Faruk)\Pharmacy Management System\PMSApp\PMSApp\bin\PMSApp.dll.config
+E:\Software Development (Faruk)\Pharmacy Management System\PMSApp\PMSApp\bin\PMSApp.dll
+E:\Software Development (Faruk)\Pharmacy Management System\PMSApp\PMSApp\bin\PMSApp.pdb
+E:\Software Development (Faruk)\Pharmacy Management System\PMSApp\PMSApp\obj\Debug\PMSApp.dll
+E:\Software Development (Faruk)\Pharmacy Management System\PMSApp\PMSApp\obj\Debug\PMSApp.pdb
+E:\Software Development (Faruk)\Pharmacy Management System\PMSApp\PMSApp\obj\Debug\PharmacyManagementSystem.csprojResolveAssemblyReference.cache

@@ -1,0 +1,10 @@
+﻿body {
+}
+
+#navbar ul li a{
+	color: #3D3825;
+	font-weight: bold;
+}
+.login-panel {
+	margin: 150px 0px 0px 0px;
+}

@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="PMSApp.Index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Pharmacy Management System</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    
+
+    <%--<asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>--%>
+</head>
+<body style="background: #B1AC83;">
+
+    <div class="container">
+        <div class="row">
+            <!--nav row -->
+            <div class="col-sm-12">
+
+                <nav class="navbar navbar-default" style="background: #9E9868; border: 1px solid #9E9868; box-shadow:0px 0px 10px #3D3825;">
+                    
+                   <%-- <div class="navbar-header">
+                        <p class="navbar-brand" style="color: #3D3825;"><strong runat="server"  id="message"></strong> Panel</p>
+                    </div>--%>
+
+                    <div id="navbar">
+                       
+                        <ul class="nav navbar-nav">
+                            <li><a href="Home.aspx"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-tint"></span>Medicine <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AddMedicine.aspx">Add Medicine</a></li>
+                                    <li><a href="MedicineList.aspx">Medicine List</a></li>
+                                    <li><a href="AddCategory.aspx">Add Category</a></li>
+                                    <li><a href="AddCompany.aspx">Add Company</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-th-list"></span>Patient <span class="caret"></span>
+                                    
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AddPatient.aspx">Add Patient</a></li>
+                                    <li><a href="PatientList.aspx">Patient List</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-book"></span>Appointment <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AddAppointment.aspx">Add Appointment</a></li>
+                                    <li><a href="AppointmentList.aspx">Appointment List</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-screenshot"></span>Doctor <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="AddDoctor.aspx">Add Doctor</a></li>
+                                    <li><a href="DoctorInformation.aspx">Doctor Information</a></li>
+                                    <li><a href="AddPrescription.aspx">Add Prescription</a></li>
+                                    <li><a href="PrescriptionDetails.aspx">Show Prescription</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right" style="margin-right: 5px;">
+                            <li><a href="CreateUser.aspx"><span class="glyphicon glyphicon-user"></span>Create User</a></li>
+                            <li><a href="Logout.aspx"><span class="glyphicon glyphicon-off"></span>Log Out</a></li>
+
+                            <%--<li>
+                                <% if (Session["center"] == null)
+                                   { %>
+                                <a href="LoginNewCenter.aspx">Login</a>
+                                <% }
+                                   else
+                                   { %>
+                                <a href="LogOutNewCenter.aspx">Log Out</a>
+                                <% } 
+                                %>
+                            </li>--%>
+                        </ul>
+                    </div>
+                    <!-- nav-collapse -->
+                </nav>
+
+            </div>
+        </div>
+        <!--end nav row-->
+
+        <!--body row-->
+        <div class="row">
+            <div class="col-sm-3">
+                <asp:ContentPlaceHolder ID="leftContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div class="col-sm-6">
+
+                <asp:ContentPlaceHolder ID="middleContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+            </div>
+            <div class="col-sm-3">
+
+                <asp:ContentPlaceHolder ID="rightContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+            </div>
+        </div>
+        <!--end body row-->
+
+        <!--body row background-->
+        <div class="row">
+            <div class="col-sm-12">
+                <asp:ContentPlaceHolder ID="backgroundImageContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!--end body row background-->
+
+        <!--body row full middle-->
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <asp:ContentPlaceHolder ID="fullMiddleContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <!--end body row full middle-->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel-footer" style="background: #9E9868; border: 1px solid #9E9868;">
+                    <p>Medicine | Patient | Doctor ||| &copy; 2015, <b>Design & Developed By Md. Omar Faruk Chowdhury</b></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
